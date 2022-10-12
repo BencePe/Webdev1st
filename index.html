@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="hu">
+
+<head>
+    <title>Kő-Papír-Olló</title>
+    <meta name="description" content="Kő-Papír-Olló játék">
+    <meta name="keywords" content="HTML, CSS, JavaScript">
+    <meta name="author" content="Pap Bence">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles.css">
+</head>
+
+<body>
+    <div class="scoreBoard">
+        <table>
+            <tr>
+                <td>Win(s): </td>
+                <td>Lose(s): </td>
+                <td>Tie(s): </td>
+            </tr>
+            <tr>
+                <td id="Win">Win(s): </td>
+                <td id="Lose">Lose(s): </td>
+                <td id="Tie">Tie(s): </td>
+            </tr>
+        </table>
+    </div>
+    <br>
+    <div class="computer">
+        <h1 class="title">Computer:</h1>
+        <div class="flex-container">
+            <div><img id="compImg" , src="rps.jpg" , height="200" , width="200"></div>
+        </div>
+    </div>
+    <br>
+    <div class="player">
+        <h1 class="title">Player:</h1>
+        <div class="flex-container">
+            <button class="button" onclick="determineOutcome(0)">
+                <div class="button__image">
+                    <img src="rock.png" alt="Kő" , height="150px" , width="150px">
+                    <div class="button__overlay">
+                        <div class="button__title">
+                            <h1>Kő</h1>
+                        </div>
+                    </div>
+                </div>
+            </button>
+            <button class="button" onclick="determineOutcome(1)">
+                <div class="button__image">
+                    <img src="paper.png" alt="Papír" , height="150px" , width="150px">
+                    <div class="button__overlay">
+                        <div class="button__title">
+                            <h1>Papír</h1>
+                        </div>
+                    </div>
+                </div>
+            </button>
+            <button class="button" onclick="determineOutcome(2)">
+                <div class="button__image">
+                    <img src="scissor.png" alt="Olló" , height="150px" , width="150px">
+                    <div class="button__overlay">
+                        <div class="button__title">
+                            <h1>Olló</h1>
+                        </div>
+                    </div>
+                </div>
+            </button>
+        </div>
+    </div>
+    <script src="main.js"></script>
+</body>
+
+</html>
