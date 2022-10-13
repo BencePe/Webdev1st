@@ -1,5 +1,4 @@
 .flex-container {
-    display: flexbox;
     text-align: center;
 }
 
@@ -7,8 +6,19 @@
     text-align: center;
 }
 
-.title {
-    text-align: center;
+.titleComp {
+    background-color: white;
+    width: fit-content;
+    margin: auto;
+    padding: auto;
+    text-decoration: double;
+}
+
+.titlePlay {
+    background-color: white;
+    width: fit-content;
+    margin: auto;
+    padding: auto;
     text-decoration: double;
 }
 
